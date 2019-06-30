@@ -1,0 +1,57 @@
+{{>header}}
+
+<div class="container">
+	<div class="row mt-3">
+	<div class="col-sm-12 text-center">
+		<h2>Crear un nuevo curso</h2>
+		<br>
+		<p>Ingrese los datos del  siguiente formulario para crear un nuevo curso</p>
+	</div>
+	<div class="col-sm-12 mt-3">
+		<form action="/RegistarCurso" method="post">
+		    <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="idCurso">Id curso</label>
+			      <input type="number" class="form-control" id="idCurso" name="idCurso" placeholder="Id curso" required>
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="nombreCurso">Nombre curso</label>
+			      <input type="text" class="form-control" id="nombreCurso" name="nombreCurso" placeholder="Nombre curso" required>
+			    </div>
+			</div>
+
+			<div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="modalidad">Modalidad</label>
+			      <select class="custom-select mr-sm-2" id="modalidad" name="modalidad">
+			        <option value="0">Seleccione la modalidad...</option>
+			        <option value="1">Presencial</option>
+			        <option value="2">Virtual</option>
+			      </select>
+
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="valor">Valor</label>
+			      <input type="number" class="form-control" id="valor" name="valor" placeholder="Valor curso" required>
+			    </div>
+			</div>
+
+			<div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="descripcion">Descripción curso</label>
+			      <textarea class="form-control" id="descripcion" name="descripcion" placeholder="Descripción curso" required></textarea>
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="intensidadHoraria">Intensidad horaria</label>
+			      <input type="number" class="form-control" id="intensidadHoraria" name="intensidadHoraria" placeholder="intensidad horaria">
+			    </div>
+			</div>
+
+			<button type="submit" class="btn btn-success">Registrar</button>
+
+		</form>
+	</div>
+	</div>
+</div>
+
+{{>footer}}

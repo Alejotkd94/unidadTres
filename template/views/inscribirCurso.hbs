@@ -1,0 +1,16 @@
+{{>header}}
+
+<div class="container">
+    <form action="/InscribirCurso" method="post">
+        <div class="row mt-2">
+            <h2>Lista de cursos disponibles</h2>
+            <br>
+            {{{selectCursos listado}}}
+        </div>
+         <div class="row mt-2">
+            <button type="submit" class="btn btn-success btn-block">Incribirse</button>
+         </div>
+    </form>
+</div>
+
+{{>footer}}
